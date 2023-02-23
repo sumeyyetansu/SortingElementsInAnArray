@@ -19,12 +19,12 @@ public class Main {
 
         System.out.println("Dizinin elemanlarını giriniz :");
         for(int i = 0; i < n; i++){
-                System.out.println(i + ". eleman :");
+                System.out.println(i + 1 + ". eleman :");
                 array[i] = scanner.nextInt();
         }
         System.out.println("Array : " + Arrays.toString(array));
         for (int i = 0; i < array.length; i++) {
-            for (int j = i+1; j <array.length ; j++){
+            for (int j = i; j <array.length ; j++){
                 if(array[j] < array[i]) {
                     temp = array[i];
                     array[i] = array[j];
